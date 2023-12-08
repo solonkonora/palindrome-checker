@@ -6,7 +6,7 @@ function palindrome () {
     return /^[a-zA-Z0-9]$/.test(char)
   }
 
-  //remove all non-alphanumeric characters
+  // remove all non-alphanumeric characters
   function removeNonAlphanumeric (str) {
     let newly = ''
     for (let i = 0; i < str.length; i++) {
