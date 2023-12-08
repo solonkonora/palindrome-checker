@@ -1,3 +1,8 @@
+// JavaScript code for palindrom check functionality
+const inputText = document.getElementById('inputText')
+const buttons = document.querySelectorAll('.container button')
+const paragraph = document.querySelectorById('result')
+
 function isPalindrome(str) {
   // convert string to an array
   const arrayValues = str.split('')
