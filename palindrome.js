@@ -1,4 +1,4 @@
-function is_palindrome (str) {
+function palindrome (str) {
   const result = document.getElementById('result')
   const input_text = document.getElementById('input_text').value
 
@@ -17,4 +17,4 @@ function is_palindrome (str) {
     result.innerHTML = 'It is not a palindrome'
   }
 }
-is_palindrome()
+palindrome()
