@@ -11,10 +11,10 @@ function isPalindrome (str) {
   // convert array to string
   const reverseString = reverseArrayValues.join('')
 
-  if (inputText == reverseString) {
+  if (inputText === reverseString) {
     result.innerHTML = 'It is a palindrome'
   } else {
     result.innerHTML = 'It is not a palindrome'
   }
 }
-isPalindrome(inputText)
+isPalindrome()
