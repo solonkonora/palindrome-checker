@@ -2,12 +2,12 @@ function palindrome () {
   const result = document.getElementById('result')
   const inputText = document.getElementById('input-text').value
 
-  function isAlphanumeric(char) {
+  function isAlphanumeric (char) {
     return /^[a-zA-Z0-9]$/.test(char)
   }
 
-  // Function to remove all non-alphanumeric characters
-  function removeNonAlphanumeric(str) {
+  //remove all non-alphanumeric characters
+  function removeNonAlphanumeric (str) {
     let newly = ''
     for (let i = 0; i < str.length; i++) {
       if (isAlphanumeric(str[i])) {
@@ -20,7 +20,7 @@ function palindrome () {
   // Remove non-alphanumeric characters from input text
   const newlyInputted = removeNonAlphanumeric(inputText)
 
-  // Convert cleaned input string to an array
+  // Convert new inputted string to an array
   const arrayValues = newlyInputted.split('')
 
   // Reverse the array values
