@@ -1,20 +1,20 @@
 function isPalindrome(str) {
-  const inputText = document.getElementById('inputText').value
   const result = document.getElementById('result')
+  const inputText = document.getElementById('inputText').value
 
   // convert string to an array
-  const arrayValues = str.split('');
+  const arrayValues = inputText.split('')
 
   // reverse the array values
-  const reverseArrayValues = arrayValues.reverse();
+  const reverseArrayValues = arrayValues.reverse('')
 
   // convert array to string
-  const reverseString = reverseArrayValues.join('');
+  const reverseString = reverseArrayValues.join('')
 
-  if (str == reverseString) {
-    result.innerHTML = 'It is a palindrome';
+  if (inputText == reverseString) {
+    result.innerHTML = 'It is a palindrome'
   } else {
-    result.innerHTML = 'It is not a palindrome';
+    result.innerHTML = 'It is not a palindrome'
   }
 }
 isPalindrome(inputText)
