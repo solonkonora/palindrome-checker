@@ -1,9 +1,9 @@
 function isPalindrome (str) {
   const result = document.getElementById('result')
-  const inputText = document.getElementById('inputText').value
+  const input_text = document.getElementById('input_text').value
 
   // convert string to an array
-  const arrayValues = inputText.split('')
+  const arrayValues = input_text.split('')
 
   // reverse the array values
   const reverseArrayValues = arrayValues.reverse('')
@@ -11,7 +11,7 @@ function isPalindrome (str) {
   // convert array to string
   const reverseString = reverseArrayValues.join('')
 
-  if (inputText === reverseString) {
+  if (input_text === reverseString) {
     result.innerHTML = 'It is a palindrome'
   } else {
     result.innerHTML = 'It is not a palindrome'
